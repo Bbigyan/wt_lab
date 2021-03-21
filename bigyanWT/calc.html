@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			text-align: center;
+			font-size: 50px;
+			background-color: purple;
+		}
+	</style>
+	<title>Calculator</title>
+</head>
+<body>
+	<input type="text" id="n1">
+	<br>
+	<input type="text" id="n2">
+	<br>
+	<button onclick="add()">add</button>
+	<button onclick="mul()">multiply</button>
+	<button onclick="div()">divide</button>
+	<button onclick="sub()">subtract</button>
+	<br>
+
+    
+	
+    <script type="text/javascript">
+    	function add(){
+    		  var first = document.getElementById('n1').value;
+		      var second = document.getElementById('n2').value;
+		      var third = parseInt(first)+parseInt(second);
+		      document.write(third);
+		    	}
+	 	function sub(){
+    		  var first = document.getElementById('n1').value;
+		      var second = document.getElementById('n2').value;;
+		      var third = parseInt(first)-parseInt(second);
+		      document.write(third);
+		      
+		    	}
+    	function mul(){
+    		  var first = document.getElementById('n1').value;
+		      var second = document.getElementById('n2').value;
+		      var third = parseInt(first)*parseInt(second);
+		      document.write(third);
+		      
+		    	}
+    	function div(){
+    		  var first = document.getElementById('n1').value;
+		      var second = document.getElementById('n2').value;
+		      var third = parseInt(first)/parseInt(second);
+		      document.write(third);
+		     
+		    	}
+
+      
+    </script>
+</body>
+</html>
